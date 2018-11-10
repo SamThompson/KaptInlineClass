@@ -3,6 +3,7 @@ package me.samthompson.kaptinlineclass
 import androidx.room.Database
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import androidx.room.RoomDatabase
 
 inline class LinkId(val name: String)
 
@@ -17,4 +18,4 @@ data class Link(
         Link::class
     ]
 )
-abstract class ExampleDatabase
+abstract class ExampleDatabase : RoomDatabase()
